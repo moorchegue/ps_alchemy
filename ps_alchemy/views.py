@@ -1,5 +1,7 @@
 import json
 import logging
+from six import text_type
+from html import escape
 
 import deform
 import colander
@@ -8,7 +10,6 @@ import sqlalchemy
 import transaction
 from pyramid.view import view_config, view_defaults
 from sacrud.common import pk_list_to_dict
-from pyramid.compat import escape, text_type
 from pyramid_sacrud import PYRAMID_SACRUD_VIEW
 from pyramid.renderers import render_to_response
 from sqlalchemy.orm.exc import NoResultFound
