@@ -7,7 +7,7 @@
 # Distributed under terms of the MIT license.
 from pyramid.events import ApplicationCreated
 from pyramid_sacrud.routes import resources_preparing_factory
-from sqlalchemy.ext.declarative.api import DeclarativeMeta
+from sqlalchemy.orm.decl_api import DeclarativeMeta
 
 from .resources import ListResource
 
